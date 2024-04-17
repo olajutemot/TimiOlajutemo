@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formContainer {
+  background-color: #282727;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 20%;
+  left: 40%;
+
+  color: #f7f7ff;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blogpage {
+  width: 70%;
+  min-width: 750px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.blogdate {
+  color: rgb(168, 168, 168);
+}
+.blogcontent {
+  width: 80%;
+  margin: 1rem auto;
+  /* border: 2px solid red; */
+}
+.blogcontent h1 {
+  font-size: 3rem;
+}
+.blogcontent hr {
+  width: 25%;
+  margin: 1.5rem 0 0;
+}
+.blogcontent.main {
+  line-height: 1.5;
+}
+@media (max-width: 1200px) {
+}

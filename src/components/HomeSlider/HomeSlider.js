@@ -17,7 +17,7 @@ const HomeSlider = () => {
   const [blogs, setBlogs] = useState([]);
 
   const get10latestblogs = () => {
-    fetch("http://localhost:8000/blog", {
+    fetch("https://timiolajutemo-backend.onrender.com/blog", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

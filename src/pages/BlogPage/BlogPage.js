@@ -71,7 +71,7 @@ const BlogPage = () => {
   const getBlogbyId = () => {
     if (blogid) {
       setLoading(true);
-      fetch(`http://localhost:8000/blog/${blogid}`, {
+      fetch(`https://timiolajutemo-backend.onrender.com/blog/${blogid}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

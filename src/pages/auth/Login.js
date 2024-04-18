@@ -36,7 +36,7 @@ const Login = () => {
       return;
     }
 
-    fetch("http://localhost:8000/auth/login", {
+    fetch("https://timiolajutemo-backend.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

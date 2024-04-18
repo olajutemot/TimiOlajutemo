@@ -19,7 +19,7 @@ const EditBlog = () => {
   const [redirect, setRedirect] = useState(false);
   const [categories, setCategories] = useState([]);
   const getCategories = () => {
-    fetch("http://localhost:8000/blogcategories")
+    fetch("https://timiolajutemo-backend.onrender.com/blogcategories")
       .then((res) => res.json())
       .then((response) => {
         setCategories(response.categories);
@@ -34,7 +34,7 @@ const EditBlog = () => {
   useEffect(() => {
     if (blogid) {
       // setLoading(true);
-      fetch(`http://localhost:8000/blog/${blogid}`, {
+      fetch(`https://timiolajutemo-backend.onrender.com/blog/${blogid}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -81,14 +81,17 @@ const EditBlog = () => {
         requestData.image = blog.image;
       }
 
-      const response = await fetch(`http://localhost:8000/blog/${blogid}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestData),
-        credentials: "include",
-      });
+      const response = await fetch(
+        `https://timiolajutemo-backend.onrender.com/blog/${blogid}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestData),
+          credentials: "include",
+        }
+      );
 
       if (response.ok) {
         toast("Blog post updated successfully");

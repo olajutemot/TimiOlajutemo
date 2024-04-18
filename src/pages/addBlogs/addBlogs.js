@@ -59,7 +59,7 @@ const AddBlogs = () => {
   const [categories, setCategories] = useState([]);
 
   const getCategories = () => {
-    fetch("http://localhost:8000/blogcategories")
+    fetch("https://timiolajutemo-backend.onrender.com/blogcategories")
       .then((res) => res.json())
       .then((response) => {
         setCategories(response.categories);
@@ -78,10 +78,13 @@ const AddBlogs = () => {
       const formData = new FormData();
       formData.append("myimage", image);
 
-      const response = await fetch("http://localhost:8000/image/uploadimage", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://timiolajutemo-backend.onrender.com/image/uploadimage",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
       if (response.ok) {
         const data = await response.json();
         console.log("Image uploaded successfully:", data);
@@ -109,14 +112,17 @@ const AddBlogs = () => {
       tempblog.imageUrl = imgUrl;
     }
 
-    const response = await fetch("http://localhost:8000/blog/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(blog),
-      credentials: "include",
-    });
+    const response = await fetch(
+      "https://timiolajutemo-backend.onrender.com/blog/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(blog),
+        credentials: "include",
+      }
+    );
 
     if (response.ok) {
       const data = await response.json();

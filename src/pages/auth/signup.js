@@ -43,7 +43,7 @@ const SignUp = () => {
       return;
     }
 
-    fetch("http://localhost:8000/auth/register", {
+    fetch("https://timiolajutemo-backend.onrender.com/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

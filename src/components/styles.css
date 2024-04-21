@@ -210,13 +210,13 @@ button:hover {
   width: 30%;
 }
 
-#info span {
+#info p {
   font-size: 0.8rem;
+  line-height: 1;
 }
 
 #contact-info a {
   text-decoration: none;
-
   border-radius: 8px;
   font-size: 0.8rem;
 }
@@ -224,12 +224,14 @@ button:hover {
   padding: 10px;
   background-color: var(--button-background);
   color: white;
+  margin-left: 2rem;
 }
 .fa-whatsapp {
   background-color: var(--icon-background-color);
   border-radius: 8px;
   padding: 10px;
   color: var(--icon-text-color);
+  margin-right: 2rem;
 }
 .fa-whatsapp:hover {
   background-color: var(--icon-background-hover-color2);
@@ -298,12 +300,13 @@ button:hover {
   font-size: 1rem;
   color: rgb(235, 232, 232);
 }
-.project-overlay i {
+#project-link {
   width: 2.5rem;
   background-color: var(--button-background);
   /* color: var(--icon-text-color); */
+  color: rgb(235, 232, 232);
   border-radius: 8px;
-  padding: 10px;
+  padding: 8px 10px;
 }
 .project-overlay i:hover {
   background-color: var(--button-hover-color);
@@ -323,7 +326,7 @@ button:hover {
   height: 100%;
   transition: 0.5s ease-in-out;
   opacity: 0;
-  color: white;
+
   font-size: 20px;
   padding: 20px;
   /* text-align: center; */
@@ -341,8 +344,10 @@ button:hover {
 .skills-container {
   margin: 2rem auto;
   display: flex;
-  place-content: center;
+  justify-content: flex-start;
+  align-self: center;
   gap: 30px;
+  border: 2px solid red;
 }
 .fa-circle-check {
   margin-top: 8px;
@@ -351,7 +356,8 @@ button:hover {
 .frontend,
 .backend {
   display: grid;
-  column-gap: 20px;
+  /* column-gap: 20px; */
+  border: 2px solid red;
 }
 .Skills-grid {
   margin: 1rem auto;
@@ -431,6 +437,9 @@ button:hover {
   #info,
   #contact-info {
     width: 70%;
+  }
+  #socials {
+    width: 40%;
   }
   .filter-tabs {
     width: 70%;

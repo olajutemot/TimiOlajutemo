@@ -11,7 +11,14 @@ const Project = ({ handleSkills, handleProjects, skills, projects }) => {
         <div class="project-overlay">
           <h3>Web App</h3>
           <p>Dice game</p>
-          <i class="fa-solid fa-up-right-from-square"></i>
+          <a
+            href="https://docs.google.com/document/d/1Qr93NMRdaiEXkNffimNsAe4TDVsc3UkB-OlbcrLAN_A/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            id="project-link"
+          >
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
       </div>
       <div class="project-items">
@@ -19,7 +26,14 @@ const Project = ({ handleSkills, handleProjects, skills, projects }) => {
         <div class="project-overlay">
           <h3>Web</h3>
           <p>interactive and responsive website</p>
-          <i class="fa-solid fa-up-right-from-square"></i>
+          <a
+            href="https://docs.google.com/document/d/1Qr93NMRdaiEXkNffimNsAe4TDVsc3UkB-OlbcrLAN_A/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            id="project-link"
+          >
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
       </div>
       <div class="project-items">
@@ -27,7 +41,14 @@ const Project = ({ handleSkills, handleProjects, skills, projects }) => {
         <div class="project-overlay">
           <h3>Web</h3>
           <p>Responsive website</p>
-          <i class="fa-solid fa-up-right-from-square"></i>
+          <a
+            href="https://docs.google.com/document/d/1Qr93NMRdaiEXkNffimNsAe4TDVsc3UkB-OlbcrLAN_A/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            id="project-link"
+          >
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
       </div>
       <div class="project-items">
@@ -35,7 +56,14 @@ const Project = ({ handleSkills, handleProjects, skills, projects }) => {
         <div class="project-overlay">
           <h3>Web</h3>
           <p>Burger Description website</p>
-          <i class="fa-solid fa-up-right-from-square"></i>
+          <a
+            href="https://docs.google.com/document/d/1Qr93NMRdaiEXkNffimNsAe4TDVsc3UkB-OlbcrLAN_A/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            id="project-link"
+          >
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </a>
         </div>
       </div>
     </section>

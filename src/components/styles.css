@@ -453,7 +453,7 @@ button:hover {
     justify-content: center;
     align-items: flex-start;
     width: 70%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .Skills-grid {
     margin: 1rem auto;

@@ -125,11 +125,13 @@ const AddBlogs = () => {
     );
 
     if (response.ok) {
-      const data = await response.json();
+      // const data = await response.json();
 
       toast("Blog post created successfully");
       setLoading(false);
-      console.log("blog posted succfully ", data);
+
+      // window.location.href = `/blogpage?blogid=${blog._id}`
+      // console.log("blog posted succfully ", data);
     } else {
       console.log(response);
       toast("Failed to create the blog post");

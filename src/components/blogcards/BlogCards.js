@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./blogCards.module.css";
 
 const BlogCards = ({ blogs }) => {
-  console.log(blogs);
+  const [blogupdatedat, setBlogupdatedat] = useState("");
+
+  // console.log(blogs);
+  const formatDate = (inputDate) => {
+    const date = new Date(inputDate);
+    const day = date.getDate();
+    const monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const monthIndex = date.getMonth();
+    const year = date.getFullYear();
+
+    return `${day} ${monthNames[monthIndex]} ${year}`;
+  };
+  const formattedDate = formatDate(blogs.updatedAt);
+  setBlogupdatedat(formattedDate);
 
   return (
     <div className={styles.blogcardContainer}>
@@ -24,7 +50,7 @@ const BlogCards = ({ blogs }) => {
             </div>
             {/* <h2>{blog.title}</h2>
             <p>{blog.description}</p> */}
-            <p>Last Updated: </p>
+            <p>Last Updated: {blogupdatedat} </p>
             {/* </div> */}
           </section>
         </div>

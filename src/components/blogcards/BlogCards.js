@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./blogCards.module.css";
 
 const BlogCards = ({ blogs }) => {
   const [blogupdatedat, setBlogupdatedat] = useState("");
 
-  // console.log(blogs);
+  useEffect(() => {
+    // Update the date when the component mounts or when the blogs prop changes
+    if (blogs.length > 0) {
+      const formattedDate = formatDate(blogs[0].updatedAt);
+      setBlogupdatedat(formattedDate);
+    }
+  }, [blogs]);
+
   const formatDate = (inputDate) => {
     const date = new Date(inputDate);
     const day = date.getDate();
@@ -27,8 +34,6 @@ const BlogCards = ({ blogs }) => {
 
     return `${day} ${monthNames[monthIndex]} ${year}`;
   };
-  const formattedDate = formatDate(blogs.updatedAt);
-  setBlogupdatedat(formattedDate);
 
   return (
     <div className={styles.blogcardContainer}>
@@ -48,8 +53,6 @@ const BlogCards = ({ blogs }) => {
               <h2>{blog.title}</h2>
               <p>{blog.description}</p>
             </div>
-            {/* <h2>{blog.title}</h2>
-            <p>{blog.description}</p> */}
             <p>Last Updated: {blogupdatedat} </p>
             {/* </div> */}
           </section>

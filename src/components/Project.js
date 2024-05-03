@@ -12,7 +12,7 @@ const Project = ({ handleSkills, handleProjects, skills, projects }) => {
           <h3>Web App</h3>
           <p>Dice game</p>
           <a
-            href="https://docs.google.com/document/d/1Qr93NMRdaiEXkNffimNsAe4TDVsc3UkB-OlbcrLAN_A/edit?usp=sharing"
+            href="https://olajutemot.github.io/Dice-game-/"
             target="_blank"
             rel="noreferrer"
             id="project-link"
@@ -54,10 +54,10 @@ const Project = ({ handleSkills, handleProjects, skills, projects }) => {
       <div class="project-items">
         <img src="menu/project tile 5.png" alt="Project 5" />
         <div class="project-overlay">
-          <h3>Web</h3>
-          <p>Burger Description website</p>
+          <h3>Web App</h3>
+          <p>A guess game built with react</p>
           <a
-            href="https://docs.google.com/document/d/1Qr93NMRdaiEXkNffimNsAe4TDVsc3UkB-OlbcrLAN_A/edit?usp=sharing"
+            href="https://guessgame-3m8a.onrender.com/"
             target="_blank"
             rel="noreferrer"
             id="project-link"
